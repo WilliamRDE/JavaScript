@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Operador lógico</title>
+
+    <script>
+
+        // if (2 >= 1 && 3 <= 8) {
+        //     document.write("<h1> Verdadeiro </h1>")
+        // } else {
+        //     document.write("<h1> Falso </h1>")
+        // }
+
+        var nota = prompt('Insira sua nota final: ')
+        var faltas = prompt('Insira a quantidade total de faltas: ')
+
+        nota = parseFloat(nota)
+        faltas = parseInt(faltas)
+
+        var media = 7
+        var faltasPermitidas = 20
+
+
+
+        var resultado = nota >= media && faltas <= faltasPermitidas ? 'Aprovado' : 'Reprovado'
+        document.write("<h1> " + resultado + " </h1>")
+
+    </script>
+
+</head>
+
+<body>
+    <!--
+        Operadores lógico:
+        E ( && ) - Verdadeiro se todas as expressões forem verdadeiras
+
+        OU ( || ) - Verdadeiro se ao menos uma das expressões forem verdadeira
+
+        Negação ( ! ) - Inverte o resultado da expressão de comparação
+    -->
+
+    <!--
+        Operadores aritmeticos:
+        operadores:
+        Adição ( + ) -> Soma de valores
+        subtração ( - ) -> Diferença entre valores
+        multiplicação ( * ) -> produto dos valores
+        Divisão ( / ) -> Quociente dos valores
+        Módulo ( % ) -> Resto existente em uma operação de divisão
+        incremento ( ++ ) -> Pré/Pós incremento
+        Decremento ( -- ) -> Pré/Pós decremento
+    -->
+</body>
+
+</html>
